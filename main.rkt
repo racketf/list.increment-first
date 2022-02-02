@@ -1,7 +1,7 @@
 #lang racket
 
-; (list/add1 p): P -> P
+; (list.increment-first p): P -> P
 ; increments first value of a list only
-(define list/add1
+(define list.increment-first
   (lambda (p)
     (cons (add1 (car p)) (cdr p))))
